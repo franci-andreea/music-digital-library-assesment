@@ -1,0 +1,48 @@
+@import './scss/colors.scss';
+
+.header {
+  display: flex;
+  flex-direction: flex-row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $orange;
+  height: 80px;
+}
+
+#menu {
+  display: flex;
+  flex-direction: flex-row;
+  justify-content: space-evenly;
+}
+
+.menu-section {
+  padding: 12px;
+}
+
+#home-section {
+  padding: 12px;
+  margin-left: 12px;
+}
+
+#user-section {
+  padding: 12px;
+  margin-right: 12px;
+}
+
+::placeholder {
+  color: $placeholder-grey;
+}
+
+#search-box {
+  width: 1000px;
+  height: 24px;
+  border-radius: 25px;
+  border: 0px;
+  padding: 12px 20px;
+}
+
+#search-box,
+select {
+  color: $grey;
+  border: 1px solid $orange;
+}
