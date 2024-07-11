@@ -1,4 +1,4 @@
-export default AlbumsPage() {
+export default function AlbumsPage() {
     return(
         <></>
     )

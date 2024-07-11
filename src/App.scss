@@ -17,12 +17,13 @@
 }
 
 #title-line {
-  width: 30%;
+  width: 25%;
   margin-top: 24px;
   border: 4px solid $orange;
 }
 
-#artist-section, #album-section {
+#artist-section,
+#album-section {
   display: flex;
   flex-direction: column;
   border-left: solid 12px $orange;

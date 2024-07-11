@@ -1,4 +1,4 @@
-export default ArtistsPage() {
+export default function ArtistsPage() {
     return (
         <></>
     )
