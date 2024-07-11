@@ -1,48 +1,24 @@
 @import './scss/colors.scss';
 
-.header {
+#content-wrapper {
   display: flex;
-  flex-direction: flex-row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $orange;
-  height: 80px;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-#menu {
+#artist-section {
   display: flex;
-  flex-direction: flex-row;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 
-.menu-section {
+#recent-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px
+}
+
+.list-bubble {
+  border: 2px solid $light-orange;
+  border-radius: 12px;
   padding: 12px;
-}
-
-#home-section {
-  padding: 12px;
-  margin-left: 24px;
-}
-
-#user-section {
-  padding: 12px;
-  margin-right: 12px;
-}
-
-::placeholder {
-  color: $placeholder-grey;
-}
-
-#search-box {
-  width: 1000px;
-  height: 24px;
-  border-radius: 25px;
-  border: 0px;
-  padding: 12px 20px;
-}
-
-#search-box,
-select {
-  color: $grey;
-  border: 1px solid $orange;
 }

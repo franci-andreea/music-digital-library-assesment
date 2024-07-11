@@ -1,0 +1,9 @@
+@import '../../scss/colors.scss';
+
+#footer {
+    background-color: $light-orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }

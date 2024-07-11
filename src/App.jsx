@@ -1,32 +1,49 @@
 import './App.scss'
+import Footer from './components/footer/Footer'
+import Header from './components/header/Header'
 
 function App() {
-
   return (
     <div>
-      <div className='header'>
-        <div id='home-section'>Home</div>
-        <input type='text' id='search-box' placeholder='Search for a specific artist or album...' />
-
-        <div id='menu'>
-          <div className='menu-section'>Artists</div>
-          <div className='menu-section'>Albums</div>
-        </div>
-
-        <div id='user-section'>Hello, User!</div>
-      </div>
+      <Header />
 
       <div id='content-wrapper'>
-        <h2>Here are some recent viewed artists</h2>
-        <div id='recent-artists-list'>
+        <div id='artist-section'>
+          <h2>Here are some recent viewed artists</h2>
+          <div id='recent-list'>
+            <div className='list-bubble'>
+              Artist Name #1
+            </div>
 
+            <div className='list-bubble'>
+              Artist Name #2
+            </div>
+
+            <div className='list-bubble'>
+              Artist Name #3
+            </div>
+          </div>
         </div>
+        
+        <div id='album-section'>
+          <h2>Here are some recent viewed albums</h2>
+          <div id='recent-list'>
+            <div className='list-bubble'>
+              Album Name #1
+            </div>
 
-        <h2>Here are some recent viewed albums</h2>
-        <div id='recent-albums-list'>
+            <div className='list-bubble'>
+              Album Name #2
+            </div>
 
+            <div className='list-bubble'>
+              Album Name #3
+            </div>
+          </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   )
 }
