@@ -8,6 +8,12 @@ function App() {
       <Header />
 
       <div id='content-wrapper'>
+        <div id='welcome-message'>
+          <h1>Welcome to your favourite music library!</h1>
+          <h3>Enjoy all the music you love. All in one place</h3>
+          <hr id='title-line'/>
+        </div>
+        
         <div id='artist-section'>
           <h2>Here are some recent viewed artists</h2>
           <div id='recent-list'>

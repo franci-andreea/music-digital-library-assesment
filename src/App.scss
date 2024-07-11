@@ -4,11 +4,29 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+
+  padding: 24px;
+  gap: 48px;
 }
 
-#artist-section {
+#welcome-message {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-line {
+  width: 30%;
+  margin-top: 24px;
+  border: 4px solid $orange;
+}
+
+#artist-section, #album-section {
+  display: flex;
+  flex-direction: column;
+  border-left: solid 12px $orange;
+  padding-left: 12px;
 }
 
 #recent-list {
