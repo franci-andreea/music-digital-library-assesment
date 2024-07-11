@@ -1,0 +1,13 @@
+@import '../../scss/colors.scss';
+
+#recent-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px
+  }
+  
+  .list-bubble {
+    border: 2px solid $light-orange;
+    border-radius: 12px;
+    padding: 12px;
+  }
