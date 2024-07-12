@@ -12,6 +12,14 @@
 #album-section {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   border-left: solid 12px $orange;
+  padding-left: 12px;
+}
+
+#recent-artists,
+#recent-albums {
+  display: flex;
+  flex-direction: column;
   padding-left: 12px;
 }

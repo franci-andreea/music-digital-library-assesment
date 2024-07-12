@@ -1,19 +1,26 @@
+import { useNavigate } from 'react-router-dom';
 import './RecentList.scss';
 
-export default function RecentList() {
-    return(
-        <div id='recent-list'>
-            <div className='list-bubble'>
-              Artist Name #1
-            </div>
+export default function RecentList({ path }) {
 
-            <div className='list-bubble'>
-              Artist Name #2
-            </div>
+  const navigate = useNavigate();
+  console.log(path)
 
-            <div className='list-bubble'>
-              Artist Name #3
-            </div>
-          </div>
-    )
+  return (
+    <div id='recent-list'>
+      <div className='list-bubble'>
+        Artist Name #1
+      </div>
+
+      <div className='list-bubble'>
+        Artist Name #2
+      </div>
+
+      <div className='list-bubble'>
+        Artist Name #3
+      </div>
+
+      <button className='view-all-button' onClick={() => navigate(path)}>→</button>
+    </div>
+  )
 }

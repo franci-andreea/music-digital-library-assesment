@@ -14,12 +14,12 @@ function App() {
         
         <div id='artist-section'>
           <h2>Here are some recent viewed artists</h2>
-          <RecentList />
+          <RecentList path={'/artists'}/>
         </div>
         
         <div id='album-section'>
           <h2>Here are some recent viewed albums</h2>
-          <RecentList />
+          <RecentList path={'/albums'}/>
         </div>
       </div>
 
