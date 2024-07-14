@@ -1,0 +1,51 @@
+@import '../../scss/colors.scss';
+
+#artist-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    height: 100vh;
+}
+
+#artist-title-section {
+    border-left: 12px solid $grey;
+    margin-bottom: 24px;
+}
+
+#artist-name {
+    color: $orange;
+    margin-left: 12px;
+}
+
+#about-artist-section {
+    color: $grey;
+}
+
+#album-line {
+    border: 1px solid $grey;
+}
+
+#artist-albums-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.artist-album-bubble {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px $yellow;
+    border-radius: 12px;
+    background-color: $yellow;
+    padding: 12px;
+
+    transition: transform .2s;
+
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}

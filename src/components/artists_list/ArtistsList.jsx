@@ -5,7 +5,7 @@ export default function ArtistsList() {
         <div id="artists-list">
             <div className="artist-bubble">
                 <h2>Artist Name1</h2>
-                <hr id="line"/>
+                <hr className="line"/>
                 <h5>
                     Albums: 
                     <br/>
@@ -15,7 +15,7 @@ export default function ArtistsList() {
 
             <div className="artist-bubble">
                 <h2>Artist Name2</h2>
-                <hr id="line"/>
+                <hr className="line"/>
                 <h5>
                     Albums: 
                     <br/>
@@ -25,7 +25,7 @@ export default function ArtistsList() {
 
             <div className="artist-bubble">
                 <h2>Artist Name3</h2>
-                <hr id="line"/>
+                <hr className="line"/>
                 <h5>
                     Albums: 
                     <br/>
@@ -35,7 +35,7 @@ export default function ArtistsList() {
 
             <div className="artist-bubble">
                 <h2>Artist Name4</h2>
-                <hr id="line"/>
+                <hr className="line"/>
                 <h5>
                     Albums: 
                     <br/>
