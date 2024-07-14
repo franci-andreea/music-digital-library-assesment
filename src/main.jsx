@@ -6,8 +6,8 @@ import {
   RouterProvider,
 } from "react-router-dom"
 import './index.scss'
-import AlbumsPage from './pages/AlbumsPage.jsx'
-import ArtistsPage from './pages/ArtistsPage.jsx'
+import AlbumsPage from './pages/albums/AlbumsPage.jsx'
+import ArtistsPage from './pages/artists/ArtistsPage.jsx'
 
 const router = createBrowserRouter([
   {
