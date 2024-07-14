@@ -7,7 +7,6 @@ export default function ArtistsPage() {
     return (
         <div>
             <Header />
-
             <div id="artists-wrapper">
                 <div id="title-section">
                     <h1>Your artists</h1>
@@ -17,10 +16,8 @@ export default function ArtistsPage() {
                         <button id="sort-za-button">Z-A</button>
                     </div>
                 </div>
-
                 <ArtistsList />
             </div>
-            
             <Footer />
         </div>
     )
