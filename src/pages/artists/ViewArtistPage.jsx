@@ -22,6 +22,11 @@ export default function ViewArtistPage() {
                         est laborum.
                     </p>
                 </div>
+
+                <div id='artist-button-section'>
+                    <button className='edit-button'>Edit Artist</button>
+                    <button className='delete-button'>Delete Artist</button>
+                </div>
                 
                 <h2>Albums</h2>
                 <hr id='album-line'></hr>

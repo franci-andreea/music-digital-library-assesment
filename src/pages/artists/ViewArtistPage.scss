@@ -22,6 +22,12 @@
     color: $grey;
 }
 
+#artist-button-section {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
 #album-line {
     border: 1px solid $grey;
 }
