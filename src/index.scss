@@ -17,6 +17,10 @@
   background-repeat: no-repeat;
 }
 
+p {
+  font-size: 18px;
+}
+
 body::-webkit-scrollbar {
   width: 8px;
 }
@@ -41,4 +45,36 @@ body::-webkit-scrollbar-thumb {
 
 ::placeholder {
   font-size: 20px;
+}
+
+.edit-button {
+  background-color: $light-orange;
+  border: 1px solid $light-orange;
+  border-radius: 12px;
+  padding: 10px;
+  color: $light-yellow;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.delete-button {
+  background-color: $red;
+  border: 1px solid $red;
+  border-radius: 12px;
+  padding: 10px;
+  color: $light-yellow;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

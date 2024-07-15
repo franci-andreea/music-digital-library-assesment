@@ -1,0 +1,33 @@
+@import '../../scss/colors.scss';
+
+#artist-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    height: 100vh;
+}
+
+#artist-title-section {
+    border-left: 12px solid $grey;
+    margin-bottom: 24px;
+}
+
+#artist-name {
+    color: $orange;
+    margin-left: 12px;
+}
+
+#about-artist-section {
+    color: $grey;
+}
+
+#artist-button-section {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+#album-line {
+    border: 1px solid $grey;
+}

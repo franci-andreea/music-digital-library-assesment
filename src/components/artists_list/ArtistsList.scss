@@ -1,0 +1,26 @@
+@import '../../scss/colors.scss';
+
+#artists-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 24px;
+    gap: 16px;
+}
+
+.artist-bubble {
+    border: solid 2px $light-orange;
+    border-radius: 12px;
+    padding: 12px;
+
+    &:hover {
+        background-color: $yellow;
+        border: 2px solid $yellow;
+        cursor: pointer;
+    }
+}
+
+.line {
+    border: 2px solid $orange;
+    margin-bottom: 8px;
+}
