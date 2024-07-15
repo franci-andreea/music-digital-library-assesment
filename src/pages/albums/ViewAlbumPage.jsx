@@ -24,8 +24,8 @@ export default function ViewAlbumPage() {
                     </p>
 
                     <div id='button-section'>
-                        <button className='edit-album-button'>Edit album</button>
-                        <button className='delete-album-button'>Delete album</button>
+                        <button className='edit-button'>Edit album</button>
+                        <button className='delete-button'>Delete album</button>
                     </div>
                 </div>
 
