@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 20px;
 }
 
-.edit-album-button {
+.edit-button {
   background-color: $light-orange;
   border: 1px solid $light-orange;
   border-radius: 12px;
@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.delete-album-button {
+.delete-button {
   background-color: $red;
   border: 1px solid $red;
   border-radius: 12px;

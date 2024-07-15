@@ -22,30 +22,12 @@
     color: $grey;
 }
 
+#artist-button-section {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
 #album-line {
     border: 1px solid $grey;
-}
-
-#artist-albums-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 24px;
-    margin-right: 24px;
-}
-
-.artist-album-bubble {
-    display: flex;
-    flex-direction: column;
-    border: solid 2px $yellow;
-    border-radius: 12px;
-    background-color: $yellow;
-    padding: 12px;
-
-    transition: transform .2s;
-
-    &:hover {
-        transform: scale(1.2);
-        cursor: pointer;
-    }
 }
