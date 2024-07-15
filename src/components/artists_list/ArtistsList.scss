@@ -12,6 +12,12 @@
     border: solid 2px $light-orange;
     border-radius: 12px;
     padding: 12px;
+
+    &:hover {
+        background-color: $yellow;
+        border: 2px solid $yellow;
+        cursor: pointer;
+    }
 }
 
 .line {
