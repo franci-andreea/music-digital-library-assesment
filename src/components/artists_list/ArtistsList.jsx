@@ -12,36 +12,6 @@ export default function ArtistsList() {
                     Album Name1, Album Name2, Album Name3
                 </h5>
             </div>
-
-            <div className="artist-bubble">
-                <h2>Artist Name2</h2>
-                <hr className="line"/>
-                <h5>
-                    Albums: 
-                    <br/>
-                    Album Name1, Album Name2, Album Name3
-                </h5>
-            </div>
-
-            <div className="artist-bubble">
-                <h2>Artist Name3</h2>
-                <hr className="line"/>
-                <h5>
-                    Albums: 
-                    <br/>
-                    Album Name1, Album Name2, Album Name3
-                </h5>
-            </div>
-
-            <div className="artist-bubble">
-                <h2>Artist Name4</h2>
-                <hr className="line"/>
-                <h5>
-                    Albums: 
-                    <br/>
-                    Album Name1, Album Name2, Album Name3
-                </h5>
-            </div>
         </div>
     )
 }
