@@ -8,6 +8,8 @@ import {
 import './index.scss'
 import AlbumsPage from './pages/albums/AlbumsPage.jsx'
 import ArtistsPage from './pages/artists/ArtistsPage.jsx'
+import ViewArtistPage from './pages/artists/ViewArtistPage.jsx'
+import ViewAlbumPage from './pages/albums/ViewAlbumPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,16 @@ const router = createBrowserRouter([
   {
     path: '/artists',
     element: <ArtistsPage />,
+  },
+
+  {
+    path: '/artist',
+    element: <ViewArtistPage />,
+  },
+
+  {
+    path: '/artist/album',
+    element: <ViewAlbumPage />,
   },
 ])
 
