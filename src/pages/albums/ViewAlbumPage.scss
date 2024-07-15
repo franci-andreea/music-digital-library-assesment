@@ -1,3 +1,84 @@
 @import '../../scss/colors.scss';
 
+#album-details-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    height: 100vh;
+}
 
+#album-description {
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 0;
+    flex-grow: 2;
+}
+
+#album-title {
+    border-left: 12px solid $grey;
+    padding: 24px;
+    margin-bottom: 24px;
+
+    h1 {
+        color: $orange;
+    }
+
+    p {
+        color: $light-orange;
+        font-size: 24px;
+    }
+}
+
+#album-songs-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+#album-songs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    
+    overflow: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $light-orange;
+        border-radius: 16px;
+    }
+}
+
+.song-bubble {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid $light-orange;
+    border-radius: 16px;
+    background-color: $yellow;
+    height: 120px;
+    width: 400px;
+    padding: 10px 0 10px 0;
+
+    h3 {
+        color: $orange;
+    }
+}
