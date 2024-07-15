@@ -31,6 +31,13 @@
     }
 }
 
+#button-section {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 24px;
+}
+
 #album-songs-wrapper {
     display: flex;
     flex-direction: column;
@@ -48,7 +55,7 @@
     align-items: center;
     gap: 16px;
     padding: 12px;
-    
+
     overflow: auto;
     overflow-x: hidden;
 

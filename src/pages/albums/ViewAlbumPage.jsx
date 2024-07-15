@@ -13,7 +13,7 @@ export default function ViewAlbumPage() {
                         <p>by Artist name</p>
                     </div>
                     
-                    <h3>Description </h3>
+                    <h3>Description</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -23,6 +23,10 @@ export default function ViewAlbumPage() {
                         est laborum.
                     </p>
 
+                    <div id='button-section'>
+                        <button className='edit-album-button'>Edit album</button>
+                        <button className='delete-album-button'>Delete album</button>
+                    </div>
                 </div>
 
                 <div id='album-songs-wrapper'>
