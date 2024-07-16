@@ -10,9 +10,6 @@ export default function ViewArtistPage() {
 
     const params = useParams();
     const [artist, setArtist] = useState();
-    console.log(artist)
-    console.log(params)
-    console.log(params.artistId.length)
 
     async function getArtist() {
         return await axios.get(`http://127.0.0.1:5000/artists/${params.artistId}`)
@@ -64,7 +61,7 @@ export default function ViewArtistPage() {
 
                             <h2>Albums</h2>
                             <hr id='album-line'></hr>
-                            <ArtistAlbumsList albums={artist.albums}/>
+                            <ArtistAlbumsList artistId={artist._id} albums={artist.albums}/>
                         </>
                         : <p>Loading...</p>
                 }
