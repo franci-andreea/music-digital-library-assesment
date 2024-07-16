@@ -5,14 +5,14 @@ export default function ArtistsList({ artists }) {
 
     const navigate = useNavigate();
 
-    function goToArtist() {
-        navigate('/artist');
+    function goToArtist(artistId) {
+        navigate(`/artists/${artistId}`);
     }
 
     return (
         <div id="artists-list">
             {artists.map((artist) =>
-                <div className="artist-bubble" key={artist._id} onClick={() => goToArtist()}>
+                <div className="artist-bubble" key={artist._id} onClick={() => goToArtist(artist._id)}>
                     <h2>{artist.name}</h2>
                     <hr className="line" />
                     <h5>
