@@ -28,12 +28,12 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/artist',
+    path: '/artists/:artistId',
     element: <ViewArtistPage />,
   },
 
   {
-    path: '/artist/album',
+    path: '/artist/:artistId/albums/:title',
     element: <ViewAlbumPage />,
   },
 ])

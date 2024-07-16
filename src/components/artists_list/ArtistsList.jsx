@@ -1,25 +1,29 @@
 import { useNavigate } from 'react-router-dom'
 import './ArtistsList.scss'
 
-export default function ArtistsList() {
+export default function ArtistsList({ artists }) {
 
     const navigate = useNavigate();
 
-    function goToArtist() {
-        navigate('/artist');
+    function goToArtist(artistId) {
+        navigate(`/artists/${artistId}`);
     }
 
-    return(
+    return (
         <div id="artists-list">
-            <div className="artist-bubble" onClick={() => goToArtist()}>
-                <h2>Artist Name1</h2>
-                <hr className="line"/>
-                <h5>
-                    Albums: 
-                    <br/>
-                    Album Name1, Album Name2, Album Name3
-                </h5>
-            </div>
+            {artists.map((artist) =>
+                <div className="artist-bubble" key={artist._id} onClick={() => goToArtist(artist._id)}>
+                    <h2>{artist.name}</h2>
+                    <hr className="line" />
+                    <h5>
+                        Albums available:
+                        {artist.albums.map(album =>
+                            <h6>{album.title}</h6>
+                        )}
+                    </h5>
+                </div>
+            )}
+
         </div>
     )
 }

@@ -1,9 +1,34 @@
+import { useEffect, useState } from "react";
 import ArtistsList from "../../components/artists_list/ArtistsList";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import './ArtistsPage.scss'
+import axios from "axios";
 
 export default function ArtistsPage() {
+    
+    const [artists, setArtists] = useState([]);
+
+    async function getArtists() {
+        return await axios.get('http://127.0.0.1:5000/artists')
+        .then(
+            (response) => {
+                return response.data.data;
+        })
+        .catch(
+            (error) => {
+                console.log("Error while retrieving data from backend!");
+                console.log(error);
+                return [];
+            }
+        )
+    }
+
+    useEffect(() => {
+        getArtists().then((val) => setArtists(val));
+    }, [])
+    
+    
     return (
         <div>
             <Header />
@@ -16,7 +41,7 @@ export default function ArtistsPage() {
                         <button id="sort-za-button">Z-A</button>
                     </div>
                 </div>
-                <ArtistsList />
+                <ArtistsList artists={artists}/>
             </div>
             <Footer />
         </div>
