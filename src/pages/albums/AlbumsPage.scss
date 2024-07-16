@@ -1,0 +1,12 @@
+#albums-wrapper {
+    height: 100vh;
+    padding: 24px;
+}
+
+#filter-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
