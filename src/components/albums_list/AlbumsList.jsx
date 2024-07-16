@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import './AlbumsList.scss'
 
-export default function AlbumsList() {
+export default function AlbumsList({albums}) {
 
     const navigate = useNavigate();
 
@@ -11,11 +11,13 @@ export default function AlbumsList() {
 
     return (
         <div id="albums-section">
-            <div className='artist-album-bubble' onClick={() => goToAlbum()}>
-                <h3>Album name</h3>
-                <hr className='line' />
-                <p>Artist Name | Total: xh, ym, zs </p>
-            </div>
+            {albums.map((album) => 
+                <div className='artist-album-bubble' onClick={() => goToAlbum()}>
+                    <h3>{album.album_name.title}</h3>
+                    <hr className='line' />
+                    <p>{album.artist_name} | Total: xh, ym, zs </p>
+                </div>
+            )} 
         </div>
     )
 }

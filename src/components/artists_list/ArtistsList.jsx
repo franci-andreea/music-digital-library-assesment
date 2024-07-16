@@ -9,7 +9,6 @@ export default function ArtistsList({ artists }) {
         navigate('/artist');
     }
 
-
     return (
         <div id="artists-list">
             {artists.map((artist) =>
