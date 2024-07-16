@@ -1,0 +1,36 @@
+@import '../../scss/colors.scss';
+
+#artists-wrapper {
+    height: 100vh;
+    padding: 24px;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 12px;
+    border-left: solid 12px $orange;
+}
+
+#sorting-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+#sort-az-button,
+#sort-za-button {
+    border-radius: 16px;
+    border: solid 1px $light-orange;
+    background-color: $light-orange;
+    color: $light-yellow;
+    height: 28px;
+    width: 46px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

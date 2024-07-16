@@ -1,48 +1,25 @@
 @import './scss/colors.scss';
 
-.header {
+#content-wrapper {
   display: flex;
-  flex-direction: flex-row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $orange;
-  height: 80px;
+  flex-direction: column;
+  height: 100vh;
+  padding: 24px;
+  gap: 48px;
 }
 
-#menu {
+#artist-section,
+#album-section {
   display: flex;
-  flex-direction: flex-row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-left: solid 12px $orange;
+  padding-left: 12px;
 }
 
-.menu-section {
-  padding: 12px;
-}
-
-#home-section {
-  padding: 12px;
-  margin-left: 12px;
-}
-
-#user-section {
-  padding: 12px;
-  margin-right: 12px;
-}
-
-::placeholder {
-  color: $placeholder-grey;
-}
-
-#search-box {
-  width: 1000px;
-  height: 24px;
-  border-radius: 25px;
-  border: 0px;
-  padding: 12px 20px;
-}
-
-#search-box,
-select {
-  color: $grey;
-  border: 1px solid $orange;
+#recent-artists,
+#recent-albums {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
 }
