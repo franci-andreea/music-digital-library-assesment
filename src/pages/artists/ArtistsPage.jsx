@@ -8,7 +8,7 @@ export default function ArtistsPage() {
         <div>
             <Header />
             <div id="artists-wrapper">
-                <div id="title-section">
+                <div className="title-section">
                     <h1>Your artists</h1>
                     <div id="sorting-section">
                         <h4>Sort by: </h4>
