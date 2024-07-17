@@ -7,7 +7,7 @@ export default function ArtistAlbumsList({ albums, artistId }) {
     const navigate = useNavigate();
 
     function goToAlbum(artistId, title) {
-        navigate(`/artist/${artistId}/albums/${title}`);
+        navigate(`/artists/${artistId}/albums/${title}`);
     }
 
     console.log(albums)
