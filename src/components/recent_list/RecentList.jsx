@@ -4,7 +4,6 @@ import './RecentList.scss';
 export default function RecentList({ path }) {
 
   const navigate = useNavigate();
-  console.log(path)
 
   return (
     <div id='recent-list'>
