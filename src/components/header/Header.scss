@@ -51,3 +51,22 @@ select {
     color: $grey;
     border: 1px solid $orange;
 }
+
+#suggestions {
+    position: absolute;
+    top: 64px;
+    left: 140px;
+    display: block;
+}
+
+.suggestion-item {
+    background-color: $yellow;
+    color: $grey;
+    padding: 12px;
+    width: 850px;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(90%);
+    }
+}

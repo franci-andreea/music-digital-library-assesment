@@ -16,7 +16,7 @@ export default function Header() {
             .get(`http://127.0.0.1:5000/suggestions/${searchInput}`)
             .then((response) => {
                 console.log(response.data);
-                setSuggestions(response.data);
+                setSuggestions(response.data.data);
             });
         }, 2000)
         return () => clearTimeout(getSuggestions)
@@ -34,11 +34,39 @@ export default function Header() {
         navigate('/albums')
     }
 
+    function goToElementPage(suggestion) {
+        if(suggestion.album_name === '')
+            // it is an artist that was selected in the search suggestions
+            navigate(`/artists/${suggestion.artist_id}`)
+        else
+            // it is an album
+            navigate(`/artists/${suggestion.artist_id}/albums/${suggestion.album_name}`)
+        
+    }
+
     return (
         <div className='header'>
             <div id='home-section' onClick={() => goToHomepage()}>Home</div>
             <input type='text' id='search-box' onChange={(event) => setSearchInput(event.target.value)} placeholder='Search for a specific artist or album...' />
-            
+            <div id='suggestions'>
+                {suggestions.map((suggestion) =>
+                    <div className='suggestion-item' onClick={() => goToElementPage(suggestion)}>
+                        {(suggestion.album_name === '') ?
+                            <div>
+                                <h5>{suggestion.artist_name}</h5>
+                                <h6>View details about artist</h6>
+                            </div>
+                            
+                         
+                        : 
+                            <div>
+                                <h5>{suggestion.album_name}</h5>
+                                <h6>Album by {suggestion.artist_name}</h6>
+                            </div>
+                        } 
+                    </div>
+                )}
+            </div>
             <div id='menu'>
                 <div className='menu-section' onClick={() => goToArtists()}>Artists</div>
                 <div className='menu-section' onClick={() => goToAlbums()}>Albums</div>
