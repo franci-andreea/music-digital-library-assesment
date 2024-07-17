@@ -55,7 +55,7 @@ select {
 #suggestions {
     position: absolute;
     top: 64px;
-    left: 140px;
+    left: 270px;
     display: block;
 }
 
@@ -63,7 +63,7 @@ select {
     background-color: $yellow;
     color: $grey;
     padding: 12px;
-    width: 850px;
+    width: 970px;
 
     &:hover {
         cursor: pointer;
