@@ -13,14 +13,14 @@ export default function Header() {
     useEffect(() => {
         const getSuggestions = setTimeout(() => {
             axios
-            .get(`http://127.0.0.1:5000/suggestions/${searchInput}`)
-            .then((response) => {
-                console.log(response.data);
-                setSuggestions(response.data.data);
-            });
-        }, 2000)
+                .get(`http://127.0.0.1:5000/suggestions/${searchInput}`)
+                .then((response) => {
+                    console.log(response.data);
+                    setSuggestions(response.data.data);
+                });
+        }, 1000)
         return () => clearTimeout(getSuggestions)
-    }, [searchInput]) 
+    }, [searchInput])
 
     function goToHomepage() {
         navigate('/');
@@ -35,13 +35,13 @@ export default function Header() {
     }
 
     function goToElementPage(suggestion) {
-        if(suggestion.album_name === '')
+        if (suggestion.album_name === '')
             // it is an artist that was selected in the search suggestions
             navigate(`/artists/${suggestion.artist_id}`)
         else
             // it is an album
             navigate(`/artists/${suggestion.artist_id}/albums/${suggestion.album_name}`)
-        
+
     }
 
     return (
@@ -54,16 +54,16 @@ export default function Header() {
                         {(suggestion.album_name === '') ?
                             <div>
                                 <h5>{suggestion.artist_name}</h5>
-                                <h6>View details about artist</h6>
+                                <p>View details about artist</p>
                             </div>
-                            
-                         
-                        : 
+
+
+                            :
                             <div>
                                 <h5>{suggestion.album_name}</h5>
-                                <h6>Album by {suggestion.artist_name}</h6>
+                                <p>Album by {suggestion.artist_name}</p>
                             </div>
-                        } 
+                        }
                     </div>
                 )}
             </div>
